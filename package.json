@@ -1,0 +1,16 @@
+{
+    "name": "demo",
+    "version": "0.0.1",
+    "description": "demo",
+    "main": "index.js",
+    "private": true,
+    "type": "module",
+    "dependencies": {
+      "bindings": "~1.2.1",
+      "node-addon-api": "^1.0.0"
+    },
+    "scripts": {
+      "test": "node test/index.mjs"
+    }
+  }
+  

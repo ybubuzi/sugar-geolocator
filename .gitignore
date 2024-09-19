@@ -1,0 +1,6 @@
+**
+!src
+!src/**/*
+!.gitignore
+!binding.gyp
+!package.json
