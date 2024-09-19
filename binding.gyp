@@ -2,7 +2,7 @@
    
   "targets": [
     {
-      "target_name": "addon",
+      "target_name": "sugar_geolocator",
       "sources": ["src/addon.cpp"],
       "include_dirs": ["<!@(node -p \"require('node-addon-api').include\")"],
       "cflags!": ["-fno-exceptions"],

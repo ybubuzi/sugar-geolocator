@@ -1,8 +1,9 @@
 {
-    "name": "demo",
+    "name": "sugar-geolocator",
     "version": "0.0.1",
-    "description": "demo",
-    "main": "index.js",
+    "description": "sugar-geolocator",
+    "main": "lib/index.cjs",
+
     "private": true,
     "type": "module",
     "dependencies": {
@@ -11,6 +12,8 @@
     },
     "scripts": {
       "test": "node test/index.mjs"
-    }
+    },
+    
+    "types": "lib/index.d.ts"
   }
   

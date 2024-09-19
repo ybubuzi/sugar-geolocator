@@ -15,6 +15,7 @@ using namespace Windows::Devices::Geolocation;
 Napi::Value GetPosition(const Napi::CallbackInfo &info)
 {
   Napi::Env env = info.Env();
+  // winrt::init_apartment();
   Geolocator geolocator;
   auto promise = Napi::Promise::Deferred::New(env);
   auto feedOp{ [env, promise, geolocator](){
@@ -45,7 +46,7 @@ Napi::Value GetPosition(const Napi::CallbackInfo &info)
  
 Napi::Object Init(Napi::Env env, Napi::Object exports)
 {
-  winrt::init_apartment();
+  
   exports.Set(Napi::String::New(env, "GetPosition"), Napi::Function::New(env, GetPosition));
   return exports;
 }
