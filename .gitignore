@@ -1,6 +1,8 @@
 **
 !src
 !src/**/*
+!test
+!test/**/*
 !.gitignore
 !binding.gyp
 !package.json
