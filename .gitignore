@@ -6,3 +6,4 @@
 !.gitignore
 !binding.gyp
 !package.json
+!.clang-format
